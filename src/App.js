@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import MapContainer from './Components/MapContainer';
-import MapNav from"./Components/MapNav";
+import MapContainer from './Component/MapContainer';
+import NavBar from"./Component/NavBar";
 import * as FourSquareAPI from './FourSquare';
 
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
         likes: ''
       },
       {
-        name: "W Hotel",
+        name: "W Hoboken",
         location: {
           lat: 40.73930439,
           lng: -74.0279008
@@ -97,7 +97,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MapNav places={this.state.currentPlaces} onQuery={this.filterPlaces} setActiveMarker={this.setActiveMarker}/>
+        <NavBar places={this.state.currentPlaces} onQuery={this.filterPlaces} setActiveMarker={this.setActiveMarker}/>
         <MapContainer places={this.state.currentPlaces} centerCoords={this.state.places[0].location} activeMarker={this.state.activeMarker} showingInfoWindow={this.state.showingInfoWindow} requestAvailable={this.state.requestAvailable}/>
       </div>
     );

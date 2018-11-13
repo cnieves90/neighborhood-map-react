@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-class MapNav extends Component {
+class NavBar extends Component {
   state = {
     hamburgerActive: false,
     query: ''
@@ -24,14 +24,14 @@ class MapNav extends Component {
     return(
       <div>
         <div className="map-nav-container">
-          <nav className="map-nav">
+          <nav className="nav-bar">
             <button aria-label='Hamburger Menu' tabIndex='0' className="hamburger-container" onClick={this.onHamburgerClick}>
               <div className="hamburger-bar"></div>
               <div className="hamburger-bar"></div>
               <div className="hamburger-bar"></div>
             </button>
             <div className="nav-title">
-              <h1>Popular Comedy Clubs</h1>
+              <h1>Hoboken Hot Spots</h1>
               <h4>Powered by FourSquare</h4>
             </div>
           </nav>
@@ -55,4 +55,4 @@ class MapNav extends Component {
   }
 }
 
-export default MapNav;
+export default NavBar;

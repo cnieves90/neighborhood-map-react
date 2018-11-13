@@ -30,7 +30,7 @@
     transform: rotate(360deg);
   }
 }
-/* Top nav bar */
+/* Top Bar */
 
 .map-nav-container {
   overflow: hidden;
@@ -39,7 +39,7 @@
   width: 100%;
 }
 
-.map-nav {
+.nav-bar {
   position: relative;
   background: white;
   display: flex;
@@ -67,13 +67,13 @@
   cursor: pointer;
   padding: 5px;
   border: 0;
-  background-color: white;
+  background-color: rgb(234, 237, 243);
 }
 
 .hamburger-bar {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: grey;
   margin: 6px 0;
 }
 
@@ -85,7 +85,7 @@
   width: 250px;
   margin-top: 75px;
   height: calc(100% - 76px);
-  background-color: white;
+  background-color: rgb(234, 237, 243);
   border-top: 1px solid;
   transform: translate(-250px);
   z-index: 1;
