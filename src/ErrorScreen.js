@@ -3,7 +3,7 @@ import './App.css';
 
 class ErrorScreen extends Component {
   state = {
-    errMsg: 'Error: Problem loading Google Maps API'
+    errMsg: 'Oops! Well, this is emabarassing.'
   }
 
   render() {
